@@ -11,18 +11,7 @@ if ($_POST) {
     $username = $_POST['username'] ?? '';
     $password = $_POST['password'] ?? '';
     
-    // ONVEILIGE SQL query - verschillende injection methods mogelijk
     $query = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
-    
-    // Debug mode - toon SQL query
-    if (isset($_GET['debug'])) {
-        echo "<div class='alert alert-info' style='margin: 20px;'>";
-        echo "<strong>DEBUG MODE:</strong><br>";
-        echo "<strong>SQL Query:</strong> " . htmlspecialchars($query) . "<br>";
-        echo "<strong>Username input:</strong> " . htmlspecialchars($username) . "<br>";
-        echo "<strong>Password input:</strong> " . htmlspecialchars($password);
-        echo "</div>";
-    }
     
     $result = executeQuery($query);
     
@@ -91,38 +80,15 @@ include 'includes/header.php';
                 
                 <div style="text-align: center; margin-top: 2rem;">
                     <p>Nog geen account? <a href="register.php" style="color: #667eea;">Registreer hier</a></p>
+                    <p style="margin-top: 1rem;"><a href="#" style="color: #666;">Wachtwoord vergeten?</a></p>
                 </div>
                 
-                <!-- SQL Injection Test Zone -->
-                <div style="text-align: center; margin-top: 1rem; background: rgba(220, 53, 69, 0.1); padding: 1rem; border-radius: 10px;">
-                    <h4 style="color: #dc3545;">SQL Injection Test Zone</h4>
-                    <p style="color: #666; font-size: 0.9rem;">
-                        <a href="?debug=1" style="color: #dc3545; font-weight: bold;">🔧 Debug modus inschakelen</a><br><br>
-                        <strong>Werkende SQL Injection Tests:</strong><br>
-                        📋 <code>' OR 1=1-- </code> (met spatie na --)<br>
-                        📋 <code>admin'-- </code> (admin bypass)<br>
-                        📋 <code>' OR '1'='1</code> (OR injection)<br>
-                        📋 <code>' OR 1=1#</code> (hash comment)<br><br>
-                        
-                        <strong>Test Accounts:</strong><br>
-                        👤 admin/admin123 (administrator)<br>
-                        👤 john/password<br>
-                        👤 test/test
+                <div style="margin-top: 2rem; padding: 1rem; background: #f8f9fa; border-radius: 10px;">
+                    <h5 style="text-align: center; color: #666;">Veilig inloggen</h5>
+                    <p style="text-align: center; color: #999; font-size: 0.9rem; margin: 0;">
+                        <i class="fas fa-lock"></i> Je gegevens worden veilig verwerkt
                     </p>
                 </div>
-                
-                <?php if (isset($_GET['debug'])): ?>
-                <div style="margin-top: 1rem; background: #f8f9fa; padding: 1rem; border-radius: 5px;">
-                    <h5>🐛 SQL Injection Tutorial:</h5>
-                    <ol style="text-align: left; font-size: 0.9rem;">
-                        <li><strong>Probeer:</strong> <code>' OR 1=1-- </code> als gebruikersnaam</li>
-                        <li><strong>Wachtwoord:</strong> Vul iets willekeurigs in</li>
-                        <li><strong>Resultaat:</strong> Je wordt ingelogd als eerste user (admin)</li>
-                        <li><strong>Waarom:</strong> De SQL query wordt: <br>
-                            <code>SELECT * FROM users WHERE username = '' OR 1=1-- ' AND password = 'test'</code></li>
-                    </ol>
-                </div>
-                <?php endif; ?>
             </div>
         </div>
     </section>

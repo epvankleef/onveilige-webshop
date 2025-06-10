@@ -48,25 +48,29 @@ include 'includes/header.php';
                         <a href="login.php" class="btn btn-primary">Nu Inloggen</a>
                     </div>
                 <?php else: ?>
+                    <p style="text-align: center; color: #666; margin-bottom: 2rem;">
+                        Maak een account aan om sneller te bestellen en je bestellingen te volgen.
+                    </p>
+                    
                     <form method="POST">
                         <div class="form-group">
                             <label for="username">Gebruikersnaam *:</label>
                             <input type="text" id="username" name="username" class="form-control"
-                                   value="<?php echo $_POST['username'] ?? ''; ?>">
-                            <small style="color: #dc3545;">LET OP: Geen validatie - test met speciale tekens!</small>
+                                   value="<?php echo $_POST['username'] ?? ''; ?>" 
+                                   placeholder="Kies een gebruikersnaam">
                         </div>
                        
                         <div class="form-group">
                             <label for="email">E-mail *:</label>
                             <input type="text" id="email" name="email" class="form-control"
-                                   value="<?php echo $_POST['email'] ?? ''; ?>">
-                            <small style="color: #dc3545;">ONVEILIG: Accepteert elk formaat!</small>
+                                   value="<?php echo $_POST['email'] ?? ''; ?>"
+                                   placeholder="jouw@email.nl">
                         </div>
                        
                         <div class="form-group">
                             <label for="password">Wachtwoord *:</label>
-                            <input type="text" id="password" name="password" class="form-control">
-                            <small style="color: #dc3545;">ONVEILIG: Wachtwoord wordt in plain text opgeslagen en is zichtbaar!</small>
+                            <input type="text" id="password" name="password" class="form-control"
+                                   placeholder="Kies een sterk wachtwoord">
                         </div>
                        
                         <button type="submit" class="btn btn-success" style="width: 100%; margin-top: 1rem;">
@@ -74,13 +78,13 @@ include 'includes/header.php';
                         </button>
                     </form>
                     
-                    <div style="margin-top: 2rem; padding: 1rem; background: #fff3cd; border: 1px solid #ffeaa7; border-radius: 5px;">
-                        <h4 style="color: #856404;"><i class="fas fa-exclamation-triangle"></i> Security Test Hints:</h4>
-                        <ul style="color: #856404; margin: 0; padding-left: 20px;">
-                            <li>Probeer HTML/JavaScript in de velden</li>
-                            <li>Test met lege velden</li>
-                            <li>Gebruik ongeldige email formats</li>
-                            <li>Let op: wachtwoord is zichtbaar!</li>
+                    <div style="margin-top: 2rem; padding: 1rem; background: #f8f9fa; border-radius: 5px;">
+                        <h5>Voordelen van een account:</h5>
+                        <ul style="margin: 0; padding-left: 20px;">
+                            <li>Sneller afrekenen bij je volgende bestelling</li>
+                            <li>Je bestellingen bekijken en volgen</li>
+                            <li>Exclusieve aanbiedingen en kortingen</li>
+                            <li>Producten opslaan in je verlanglijst</li>
                         </ul>
                     </div>
                 <?php endif; ?>

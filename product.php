@@ -29,7 +29,7 @@ if ($_POST && isset($_POST['comment'])) {
     
     logAction("Comment added on product $product_id by $username");
     
-    header("Location: product.php?id=$product_id&message=" . urlencode("Comment toegevoegd!"));
+    header("Location: product.php?id=$product_id&message=" . urlencode("Review toegevoegd!"));
     exit();
 }
 
@@ -59,21 +59,31 @@ include 'includes/header.php';
                 <div class="product-detail-info">
                     <h1><?php echo $product['name']; ?></h1>
                     <div class="product-detail-price">€<?php echo $product['price']; ?></div>
+                    
+                    <div class="product-rating" style="margin: 1rem 0;">
+                        <i class="fas fa-star" style="color: #ffc107;"></i>
+                        <i class="fas fa-star" style="color: #ffc107;"></i>
+                        <i class="fas fa-star" style="color: #ffc107;"></i>
+                        <i class="fas fa-star" style="color: #ffc107;"></i>
+                        <i class="far fa-star" style="color: #ffc107;"></i>
+                        <span style="margin-left: 0.5rem;">4.0 (<?php echo rand(10, 50); ?> reviews)</span>
+                    </div>
+                    
                     <div class="product-detail-description">
                         <?php echo $product['description']; ?>
                     </div>
                     
                     <div style="margin-top: 2rem;">
                         <p><strong>Voorraad:</strong> <?php echo $product['stock']; ?> stuks</p>
-                        <p><strong>Product ID:</strong> <?php echo $product['id']; ?> 
-                           <small style="color: #dc3545;">(IDOR Test: verander dit nummer in URL)</small></p>
+                        <p><strong>Artikelnummer:</strong> <?php echo str_pad($product['id'], 6, '0', STR_PAD_LEFT); ?></p>
+                        <p><strong>Levertijd:</strong> 1-2 werkdagen</p>
                     </div>
                     
                     <div style="margin-top: 2rem;">
                         <a href="order.php?product_id=<?php echo $product['id']; ?>" class="btn btn-success">
                             <i class="fas fa-shopping-cart"></i> Nu Bestellen
                         </a>
-                        <a href="index.php" class="btn btn-secondary">
+                        <a href="products.php" class="btn btn-secondary">
                             <i class="fas fa-arrow-left"></i> Terug naar overzicht
                         </a>
                     </div>
@@ -84,19 +94,10 @@ include 'includes/header.php';
 
     <section class="comments-section">
         <div class="container">
-            <h3><i class="fas fa-comments"></i> Reviews & Comments</h3>
-            
-            <div style="background: rgba(220, 53, 69, 0.1); padding: 1rem; border-radius: 10px; margin-bottom: 2rem;">
-                <h4 style="color: #dc3545;"><i class="fas fa-bug"></i> XSS Test Zone</h4>
-                <p style="color: #666; font-size: 0.9rem;">
-                    Test XSS in comments (werkt nu!): <code>&lt;script&gt;alert('XSS')&lt;/script&gt;</code><br>
-                    Of probeer: <code>&lt;img src=x onerror=alert('Image XSS')&gt;</code><br>
-                    Simpel: <code>&lt;script&gt;alert(123)&lt;/script&gt;</code>
-                </p>
-            </div>
+            <h3><i class="fas fa-comments"></i> Klantreviews</h3>
             
             <div class="form-container" style="margin-bottom: 3rem;">
-                <h4>Laat een review achter:</h4>
+                <h4>Schrijf een review</h4>
                 <form method="POST">
                     <div class="form-group">
                         <label for="username">Naam:</label>
@@ -105,13 +106,13 @@ include 'includes/header.php';
                     </div>
                     
                     <div class="form-group">
-                        <label for="comment">Comment:</label>
-                        <textarea id="comment" name="comment" class="form-control" 
-                                  placeholder="Deel je ervaring... XSS test: &lt;script&gt;alert(123)&lt;/script&gt;" required></textarea>
+                        <label for="comment">Je review:</label>
+                        <textarea id="comment" name="comment" class="form-control" rows="4"
+                                  placeholder="Wat vind je van dit product?" required></textarea>
                     </div>
                     
                     <button type="submit" class="btn btn-primary">
-                        <i class="fas fa-paper-plane"></i> Verstuur Comment
+                        <i class="fas fa-paper-plane"></i> Verstuur Review
                     </button>
                 </form>
             </div>
@@ -134,22 +135,12 @@ include 'includes/header.php';
                 <?php if ($comments_result->num_rows == 0): ?>
                     <div class="comment">
                         <div class="comment-text" style="text-align: center; color: #666;">
-                            <i class="fas fa-comment-slash"></i> Nog geen reviews voor dit product.
+                            <i class="fas fa-comment-slash"></i> Nog geen reviews voor dit product. Wees de eerste!
                         </div>
                     </div>
                 <?php endif; ?>
             </div>
         </div>
     </section>
-
-    <script>
-        console.log('Viewing product: <?php echo addslashes($product['name']); ?>');
-        
-        var productData = {
-            id: <?php echo $product['id']; ?>,
-            name: '<?php echo addslashes($product['name']); ?>',
-            price: <?php echo $product['price']; ?>
-        };
-    </script>
 
 <?php include 'includes/footer.php'; ?>
