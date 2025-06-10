@@ -1,0 +1,117 @@
+[2025-06-10 00:35:03] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 00:36:01] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 00:36:14] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 00:36:26] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 00:36:31] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 00:36:52] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 00:38:45] User: anonymous, IP: 127.0.0.1, Action: Failed login attempt for: ' OR '1'='1
+[2025-06-10 00:39:25] User: anonymous, IP: 127.0.0.1, Action: Failed login attempt for: ' OR '1'='1
+[2025-06-10 00:40:24] User: anonymous, IP: 127.0.0.1, Action: Failed login attempt for: ' OR '1'='1
+[2025-06-10 00:42:31] User: anonymous, IP: 127.0.0.1, Action: Failed login attempt for: ' OR '1'='1
+[2025-06-10 00:43:22] User: 1, IP: 127.0.0.1, Action: User logged in: admin
+[2025-06-10 00:43:22] User: 1, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 00:43:28] User: 1, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 00:43:30] User: 1, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 00:43:32] User: 1, IP: 127.0.0.1, Action: User logged out: admin
+[2025-06-10 00:43:32] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 00:43:45] User: anonymous, IP: 127.0.0.1, Action: Failed login attempt for: ' OR '1'='1
+[2025-06-10 00:43:51] User: anonymous, IP: 127.0.0.1, Action: Failed login attempt for: ' OR '1'='1 
+[2025-06-10 00:43:54] User: anonymous, IP: 127.0.0.1, Action: Failed login attempt for: ' OR '1'='1 
+[2025-06-10 00:44:37] User: anonymous, IP: 127.0.0.1, Action: Failed login attempt for: ' OR '1'='1
+[2025-06-10 00:44:40] User: anonymous, IP: 127.0.0.1, Action: Failed login attempt for: ' OR '1'='1
+[2025-06-10 00:44:43] User: anonymous, IP: 127.0.0.1, Action: Failed login attempt for: ' OR '1'='1
+[2025-06-10 00:44:51] User: anonymous, IP: 127.0.0.1, Action: Failed login attempt for: ' OR '1'='1
+[2025-06-10 00:45:21] User: 1, IP: 127.0.0.1, Action: User logged in: admin
+[2025-06-10 00:45:21] User: 1, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 00:45:38] User: 1, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 00:46:37] User: 1, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 00:47:09] User: 1, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 00:47:34] User: 1, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 00:47:36] User: 1, IP: 127.0.0.1, Action: Homepage visited, search: 'test' OR '1'='1'
+[2025-06-10 00:47:52] User: 1, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 00:48:35] User: 1, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 00:50:07] User: 1, IP: 127.0.0.1, Action: User logged out: admin
+[2025-06-10 00:50:07] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 00:50:13] User: anonymous, IP: 127.0.0.1, Action: Failed login attempt for: ' OR '1'='1
+[2025-06-10 00:50:29] User: 1, IP: 127.0.0.1, Action: User logged in: admin
+[2025-06-10 00:50:29] User: 1, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 00:55:18] User: 1, IP: 127.0.0.1, Action: User logged out: admin
+[2025-06-10 00:55:18] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 00:55:22] User: anonymous, IP: 127.0.0.1, Action: Failed login attempt for: ' OR '1'='1
+[2025-06-10 00:55:27] User: anonymous, IP: 127.0.0.1, Action: Failed login attempt for: ' OR '1'='1
+[2025-06-10 00:55:36] User: 1, IP: 127.0.0.1, Action: User logged in: admin
+[2025-06-10 00:55:36] User: 1, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 00:57:09] User: 1, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 00:57:10] User: 1, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 00:57:19] User: 1, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 00:58:28] User: 1, IP: 127.0.0.1, Action: Comment added on product 5 by admin
+[2025-06-10 01:00:06] User: 1, IP: 127.0.0.1, Action: User logged out: admin
+[2025-06-10 01:00:06] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 01:00:41] User: 1, IP: 127.0.0.1, Action: User logged in: admin
+[2025-06-10 01:00:41] User: 1, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 01:01:10] User: 1, IP: 127.0.0.1, Action: Comment added on product 1 by admin
+[2025-06-10 01:04:05] User: 1, IP: 127.0.0.1, Action: User made admin: ID 2
+[2025-06-10 01:04:18] User: 1, IP: 127.0.0.1, Action: User deleted: ID 3
+[2025-06-10 01:04:30] User: 1, IP: 127.0.0.1, Action: All comments deleted
+[2025-06-10 01:05:53] User: 1, IP: 127.0.0.1, Action: User logged out: admin
+[2025-06-10 01:05:53] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 01:05:55] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: '' OR '1'='1'
+[2025-06-10 01:06:03] User: anonymous, IP: 127.0.0.1, Action: Failed login attempt for: ' OR '1'='1
+[2025-06-10 01:06:04] User: anonymous, IP: 127.0.0.1, Action: Failed login attempt for: ' OR '1'='1
+[2025-06-10 01:07:31] User: 1, IP: 127.0.0.1, Action: User logged in: admin
+[2025-06-10 01:07:31] User: 1, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 01:08:14] User: 1, IP: 127.0.0.1, Action: User logged out: admin
+[2025-06-10 01:08:14] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 01:08:22] User: anonymous, IP: 127.0.0.1, Action: Failed login attempt for: ' OR '1'='1
+[2025-06-10 01:09:03] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 01:09:09] User: 1, IP: 127.0.0.1, Action: User logged in: admin
+[2025-06-10 01:09:09] User: 1, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 01:09:20] User: 1, IP: 127.0.0.1, Action: User logged out: admin
+[2025-06-10 01:09:20] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 01:09:25] User: 1, IP: 127.0.0.1, Action: User logged in: admin
+[2025-06-10 01:09:25] User: 1, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 01:09:39] User: 1, IP: 127.0.0.1, Action: User logged out: admin
+[2025-06-10 01:09:39] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 08:52:58] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 08:54:15] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 08:54:41] User: anonymous, IP: 127.0.0.1, Action: User made admin: ID 2
+[2025-06-10 08:54:51] User: anonymous, IP: 127.0.0.1, Action: User made admin: ID 4
+[2025-06-10 08:58:12] User: anonymous, IP: 127.0.0.1, Action: Contact form submitted by: ed
+[2025-06-10 09:00:16] User: anonymous, IP: 127.0.0.1, Action: Failed login attempt for: admin
+[2025-06-10 09:00:20] User: 1, IP: 127.0.0.1, Action: User logged in: admin
+[2025-06-10 09:00:20] User: 1, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 09:00:38] User: 1, IP: 127.0.0.1, Action: All passwords reset
+[2025-06-10 09:00:52] User: 1, IP: 127.0.0.1, Action: User logged out: admin
+[2025-06-10 09:00:52] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 09:02:19] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 09:04:48] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 09:05:02] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: '' OR 1=1#'
+[2025-06-10 09:05:04] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: '' OR 1=1#'
+[2025-06-10 09:05:05] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: '' OR 1=1#'
+[2025-06-10 09:05:06] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: '' OR 1=1#'
+[2025-06-10 09:05:06] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: '' OR 1=1#'
+[2025-06-10 09:05:07] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: '' OR 1=1#'
+[2025-06-10 09:05:41] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 09:05:44] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: '' OR 1=1 OR '1'='1'
+[2025-06-10 09:05:45] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: '' OR 1=1 OR '1'='1'
+[2025-06-10 09:05:52] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 09:06:26] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: 'Laptop Pro X1'
+[2025-06-10 09:06:29] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 09:06:30] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 09:08:11] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 09:08:24] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: 'OR 1=1#'
+[2025-06-10 09:08:31] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: 'xyz' OR 1=1#'
+[2025-06-10 10:21:16] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 10:23:40] User: anonymous, IP: 127.0.0.1, Action: All passwords reset
+[2025-06-10 10:23:51] User: anonymous, IP: 127.0.0.1, Action: User deleted: ID 3
+[2025-06-10 10:25:07] User: anonymous, IP: 127.0.0.1, Action: New user registered: edwin
+[2025-06-10 10:25:46] User: anonymous, IP: 127.0.0.1, Action: Failed login attempt for: ' OR '1'='1
+[2025-06-10 10:25:58] User: 1, IP: 127.0.0.1, Action: User logged in: admin
+[2025-06-10 10:25:58] User: 1, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 10:27:09] User: 1, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 10:52:42] User: 1, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 10:53:08] User: 1, IP: 127.0.0.1, Action: User logged out: admin
+[2025-06-10 10:53:08] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 13:23:14] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 13:23:34] User: anonymous, IP: 127.0.0.1, Action: New user registered: ed@ed.nl
+[2025-06-10 13:29:52] User: anonymous, IP: 127.0.0.1, Action: New user registered: testd
