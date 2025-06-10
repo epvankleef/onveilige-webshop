@@ -115,3 +115,18 @@
 [2025-06-10 13:23:14] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
 [2025-06-10 13:23:34] User: anonymous, IP: 127.0.0.1, Action: New user registered: ed@ed.nl
 [2025-06-10 13:29:52] User: anonymous, IP: 127.0.0.1, Action: New user registered: testd
+[2025-06-10 13:41:46] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 13:42:16] User: anonymous, IP: 127.0.0.1, Action: Failed login attempt for: jane
+[2025-06-10 13:45:14] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 13:45:21] User: 3, IP: 127.0.0.1, Action: User logged in: jane
+[2025-06-10 13:45:21] User: 3, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 13:45:29] User: 3, IP: 127.0.0.1, Action: User logged out: jane
+[2025-06-10 13:45:29] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 13:45:37] User: 2, IP: 127.0.0.1, Action: User logged in: john
+[2025-06-10 13:45:37] User: 2, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 13:45:39] User: 2, IP: 127.0.0.1, Action: User logged out: john
+[2025-06-10 13:45:39] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 13:45:49] User: 1, IP: 127.0.0.1, Action: User logged in: admin
+[2025-06-10 13:45:49] User: 1, IP: 127.0.0.1, Action: Homepage visited, search: ''
+[2025-06-10 13:45:51] User: 1, IP: 127.0.0.1, Action: User logged out: admin
+[2025-06-10 13:45:51] User: anonymous, IP: 127.0.0.1, Action: Homepage visited, search: ''
