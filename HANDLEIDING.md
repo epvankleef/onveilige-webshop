@@ -2,54 +2,15 @@
 
 ---
 
-## Inleiding
+## Wat ga je leren?
 
-Je hebt geleerd over pentesten, in deze les ga je daar zelf mee oefenen! Je stapt in de voeten van een **ethisch hacker**. Via een opzettelijk onveilige webshop ga je verschillende pentesten uitvoeren om zo een aantal geheime codes te kraken!
+In deze opdracht onderzoek je een **opzettelijk onveilige webshop**. Je leert:
 
----
+- Hoe veelvoorkomende beveiligingslekken eruitzien in echte code
+- Hoe een aanvaller deze lekken kan misbruiken
+- Hoe je ze kunt oplossen
 
-## 🎯 Leerdoel
-
-Na de opdracht:
-- Weet je het verschil tussen hacken en ethisch hacken
-- Kan je verschillende vormen van pentesten uitleggen en uitvoeren
-- Herken je veelvoorkomende beveiligingslekken uit de **OWASP Top 10** in echte code
-
----
-
-## 📚 Bronnen
-
-- De uitleg per lek staat verderop in dit document
-- Je kunt via YouTube filmpjes zoeken over pentesten, SQL injection, XSS, etc.
-- [OWASP Top 10](https://owasp.org/www-project-top-ten/) — officiële lijst van meest voorkomende kwetsbaarheden
-
----
-
-## 📝 Instructie
-
-1. Start de server (zie installatie hieronder)
-2. Ga naar **http://localhost:8080**
-3. Open de CTF-pagina: **http://localhost:8080/ctf.php** — hier zie je de 8 uitdagingen
-4. Klik een uitdaging aan om te beginnen
-5. Los je de uitdaging goed op? Dan zie je ergens een vlag staan:
-   ```
-   FLAG{random_code}
-   ```
-6. Noteer de vlag-code en omschrijf hoe je er aan gekomen bent
-
----
-
-## ✅ Voorwaarden
-
-Als je alle 8 uitdagingen hebt gedaan en alle vlaggen hebt opgeschreven én omschreven welke methode je gebruikt hebt, dan ben je klaar!
-
----
-
-## 📤 Inleveren
-
-Lever een `.docx` of `.pdf` in met daarin:
-- De gevonden vlag per uitdaging
-- Een omschrijving van hoe je de vlag gevonden hebt (welk lek, welke aanval)
+De lekken zijn gebaseerd op de **OWASP Top 10** — de officiële lijst van de meest voorkomende kwetsbaarheden in webapplicaties, gebruikt door security-professionals wereldwijd.
 
 ---
 
