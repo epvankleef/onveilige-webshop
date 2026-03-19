@@ -19,7 +19,15 @@ if ($_POST) {
             $insert_query = "INSERT INTO users (username, password, email) VALUES ('$username', '$password', '$email')";
            
             if (executeQuery($insert_query)) {
-                $message = "Account succesvol aangemaakt! Je kunt nu inloggen.";
+                // CTF Vlag 8: Toon vlag als het e-mailadres ongeldig is (geen geldige opmaak)
+                if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                    $message = "Account aangemaakt! Maar er ontbreekt e-mailvalidatie — je gebruikte een ongeldig adres.<br>"
+                        . "<span style='font-size:0.9rem;'>🚩 <strong>CTF Vlag #8:</strong> "
+                        . "<code style='background:#1a1a2e;color:#00ff41;padding:0.3rem 0.6rem;border-radius:4px;'>"
+                        . "FLAG{input_validatie_omzeild}</code></span>";
+                } else {
+                    $message = "Account succesvol aangemaakt! Je kunt nu inloggen.";
+                }
                 logAction("New user registered: " . $username);
             } else {
                 $error = "Er ging iets mis bij het aanmaken van het account.";

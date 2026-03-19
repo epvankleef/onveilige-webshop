@@ -16,6 +16,9 @@ if ($search) {
 $result = executeQuery($query);
 
 include 'includes/header.php';
+
+// CTF Vlag 6: Verborgen in HTML broncode — zichtbaar via Ctrl+U of via XSS document.documentElement.innerHTML
+echo "<!-- CTF Debug Info: FLAG{reflected_xss_in_broncode} -->\n";
 ?>
 
     <section class="products-section" style="margin-top: 2rem;">

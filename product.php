@@ -40,6 +40,9 @@ $message = $_GET['message'] ?? '';
 
 $page_title = $product['name'] . " - TechShop";
 
+// CTF Vlag 5: Cookie instellen — alleen zichtbaar via XSS (document.cookie)
+setcookie('ctf_flag_5', 'FLAG{stored_xss_cookie_gestolen}', time() + 3600, '/');
+
 include 'includes/header.php';
 ?>
 

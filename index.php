@@ -32,7 +32,24 @@ include 'includes/header.php';
                 <?php if ($message): ?>
                     <?php echo displayMessage($message); ?>
                 <?php endif; ?>
-                
+
+                <?php
+                // CTF Vlag 1: Alleen zichtbaar als je bent ingelogd als de geheime gebruiker
+                if (isLoggedIn() && isset($_SESSION['username']) && $_SESSION['username'] === 'geheim'):
+                ?>
+                <div style="background: #1a1a2e; border: 2px solid #00ff41; border-radius: 10px; padding: 1.5rem; margin-top: 1rem; text-align: center;">
+                    <p style="color: #00ff41; font-size: 1.1rem; margin: 0 0 0.5rem 0;">
+                        🚩 <strong>CTF Vlag #1 gevonden!</strong>
+                    </p>
+                    <p style="color: #aaa; font-size: 0.85rem; margin: 0 0 0.75rem 0;">
+                        Je bent ingelogd als de geheime gebruiker via SQL injectie.
+                    </p>
+                    <code style="background: rgba(0,255,65,0.1); color: #00ff41; padding: 0.5rem 1rem; border-radius: 6px; font-size: 1rem; letter-spacing: 1px; display: inline-block;">
+                        FLAG{sql_login_bypass_gelukt}
+                    </code>
+                </div>
+                <?php endif; ?>
+
                 <form class="search-form" method="GET">
                     <input type="text" name="search" placeholder="Zoek producten..." 
                            value="<?php echo $search; ?>">

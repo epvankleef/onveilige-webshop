@@ -79,7 +79,20 @@ include 'includes/header.php';
                     <?php echo $message; ?>
                 </div>
             <?php endif; ?>
-            
+
+            <!-- CTF Vlag 3: Broken Access Control — zichtbaar voor iedereen die admin.php weet te bereiken -->
+            <div style="background: #1a1a2e; border: 2px solid #00ff41; border-radius: 10px; padding: 1.5rem; margin-bottom: 2rem; text-align: center;">
+                <p style="color: #00ff41; font-size: 1.2rem; margin: 0 0 0.5rem 0;">
+                    🚩 <strong>CTF Vlag #3 gevonden!</strong>
+                </p>
+                <p style="color: #aaa; font-size: 0.85rem; margin: 0 0 0.75rem 0;">
+                    Je hebt het admin-paneel bereikt zonder authenticatiecontrole.
+                </p>
+                <code style="background: rgba(0,255,65,0.1); color: #00ff41; padding: 0.5rem 1.5rem; border-radius: 6px; font-size: 1.1rem; letter-spacing: 1px; display: inline-block;">
+                    FLAG{admin_zonder_login}
+                </code>
+            </div>
+
             <!-- Statistics Cards -->
             <div class="admin-stats">
                 <div class="stat-card">
