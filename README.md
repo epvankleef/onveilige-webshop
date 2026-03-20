@@ -27,7 +27,7 @@ Pak het ZIP-bestand uit op je computer.
 
 Of via git (als dat geïnstalleerd is):
 ```
-git clone https://github.com/epvankleef/onveilige-webshop.git
+git clone <url van deze pagina>
 cd onveilige-webshop
 ```
 
