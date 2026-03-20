@@ -28,7 +28,7 @@ Pak het ZIP-bestand uit op je computer.
 Of via git (als dat geïnstalleerd is):
 ```
 git clone <url van deze pagina>
-cd onveilige-webshop
+cd repo <repo directory>
 ```
 
 ### Stap 2 — Start de server
