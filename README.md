@@ -22,12 +22,14 @@ php --version
 
 ### Stap 1 — Download het project
 
+Klik op de groene **Code** knop bovenaan deze pagina en kies **Download ZIP**.
+Pak het ZIP-bestand uit op je computer.
+
+Of via git (als dat geïnstalleerd is):
 ```
-git clone https://github.com/JOUW-GEBRUIKERSNAAM/onveilige-webshop.git
+git clone <url van deze pagina>
 cd onveilige-webshop
 ```
-
-Of download als ZIP via de groene **Code** knop op GitHub.
 
 ### Stap 2 — Start de server
 
